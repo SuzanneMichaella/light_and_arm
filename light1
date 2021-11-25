@@ -1,0 +1,23 @@
+
+const int LDR=(A0);
+int light_level = (0);
+const int startlight= analogRead(LDR);
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin (9600); 
+
+}
+
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  light_level = analogRead(LDR);
+  Serial.print  ("start:");
+  Serial.println(startlight);
+  //Serial.println (light_level);
+  delay(500);
+
+}
